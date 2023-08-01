@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Landing Page</title>
+	<link 
+		rel="stylesheet" href="styles.css">
+	<link 
+		rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link
+		rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+	<link 
+		rel="preconnect" href="https://fonts.googleapis.com">
+	<link 
+		rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap" rel="stylesheet">
+	<link 
+		rel="preconnect" href="https://fonts.googleapis.com">
+	<link 
+		rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link 
+		href="https://fonts.googleapis.com/css2?family=Handjet:wght@3	00&display=swap" rel="stylesheet">
+	<link 
+		href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900" rel="stylesheet">
+</head>
+
+<body id="bdy">
+	<nav class="navbar" id="nav">
+		<div class="navbar-left">
+			<h1>Vansham</h1>
+		</div>
+
+		<div class="navbar-right">
+			<a href="https://github.com/vansham-kamboj" target="_blank"><img src="../img/icons8-github-50.png" alt=""></a>
+			<a href="https://www.linkedin.com/in/vansham-kamboj-405521217/" target="_blank"><img src="../img/icons8-linkedin-48.png" alt=""></a>
+			<a href="https://stackoverflow.com/users/15440386/1147-vansham-kamboj?tab=profile" target="_blank"><img src="../img/icons8-stack-overflow-48.png" alt=""></a>
+			<a href="https://www.youtube.com/@VanshamKamboj/" target="_blank"><img src="../img/icons8-youtube-logo-50.png" alt=""></a>
+		</div>
+	</nav>
+
+
+	<div class="landing-page" id="landing">
+		<div class="left-section" id="left-s">
+			<h1 class="anim-heading">Let's Go..</h1>
+			<ul>
+				<li><input value="About" type="button" name="About-me" onclick="ShowAbt()" /></li>
+				<li><input value="Projects" type="button" name="Project" onclick="ShowPro()" /></li>
+				<!--<li><input value="My Skills" type="button" name="skills" onclick="ShowSkill()" /></li>-->
+				<li><input value="Contact Me" type="button" name="contact-us" onclick="ShowCont()" /></li>
+			</ul>
+		</div>
+
+
+		<section class="right-section" id="right-s	">
+			<div id="home">
+				<h1 id="welcome">Welcome</h1>
+				Unlock the potential of your online presence with a fusion of artistry and technical finesse, brought to life by our talented web developer, content guru, and graphics virtuoso.
+
+			</div>
+
+			<section class="projects" id="projects" style="display:none;">
+				<h2>Projects</h2>
+				<p>Welcome to the enchanting world of celebrations! Explore our meticulously crafted website for an Indian event and wedding planner, where tradition meets innovation, and dreams come alive with unforgettable moments.</p>
+				<iframe id="main" src="/wedding website/index.html"></iframe>
+			</section>
+
+			<section id="skills" style="display:none;">
+				<h2>Skills</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card card-1">
+								<h3>HTML</h3>
+								<p>A curated set of</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-2">
+								<h3>CSS</h3>
+								<p>Tabs, buttons, inputs.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-3">
+								<h3>JAVASCRIPT</h3>
+								<p>Learn how to easily.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<div id="contact-us" style="display:none;">
+				<h2>Contact Us</h2>
+				<p>If you have any inquiries or want to discuss a project, feel free to contact us using the information
+					provided below.</p>
+			</div>
+
+
+			<div id="about-me" style="display:none;">
+				<h2>About Me</h2>
+				<div class="left-img">
+					<img src="/img/vansham.jpeg" alt="" class="abt-img">
+				</div>
+				<div class="right-img">
+					<p>Greetings! I'm Vansham Kamboj, a passionate and versatile professional working in the exciting realms of web development and graphics design. With an unwavering love for all things digital, I find joy in creating aesthetically pleasing and functional online experiences that leave a lasting impact.</p>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<footer>
+		<div class="footer-content" id="footer">
+			<p>&copy; 2023 Vansham. All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<!-- Chatbot button -->
+	<button id="chatbotButton" class="chatbot-button">Ask me with Chatbot?</button>
+
+	<!-- Chatbot container -->
+	<div class="chatbox" id="chatbox">
+		<div class="chatlogs" id="chatlogs">
+			<!-- Chat messages will be added here dynamically -->
+		</div>
+		<input type="text" id="userInput" placeholder="Type your message...">
+		<button id="sendButton" class="send-button">Send</button>
+	</div>
+
+	<!-- Whatsapp button -->
+	<a href="https://api.whatsapp.com/send?phone=918320495754" target="_blank" class="contact-me-button"><img src="/img/icons8-whatsapp-48.png" alt=""></a>
+	<script src="script.js"></script>
+</body>
+
+</html>
