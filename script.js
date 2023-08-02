@@ -3,7 +3,7 @@ const chatBox = document.getElementById('chatbox');
 const chatLogs = document.getElementById('chatlogs');
 const userInput = document.getElementById('userInput');
 const sendButton = document.getElementById('sendButton');
-
+  
 
 const responses = {
   'hello': 'Hello! How can I assist you?',
@@ -60,36 +60,6 @@ chatButton.addEventListener('click', () => {
 
 sendButton.addEventListener('click', () => {
   handleUserInput();
-});
-
-
-
-
-
-
-
-// Function to toggle between light mode and dark mode
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle('dark-mode');
-}
-
-// Event listener for the chatbot button
-chatButton.addEventListener('click', () => {
-  chatBox.style.display = chatBox.style.display === 'none' ? 'block' : 'none';
-});
-
-// Event listener for the send button
-sendButton.addEventListener('click', () => {
-  handleUserInput();
-});
-
-// Event listener for toggling dark mode
-document.addEventListener('keydown', (e) => {
-  // Check if the 'D' key is pressed while holding the 'Control' key (Ctrl)
-  if (e.key === 'd' && e.ctrlKey) {
-    toggleDarkMode();
-  }
 });
 
 
